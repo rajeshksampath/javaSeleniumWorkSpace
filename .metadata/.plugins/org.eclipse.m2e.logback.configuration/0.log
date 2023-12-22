@@ -20059,3 +20059,4 @@ Caused by: org.eclipse.aether.resolution.VersionRangeResolutionException: No ver
 2023-12-15 13:51:48,111 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rajes\Learning\eclipse-workspace\IntroductionIndhu\src\main\resources
 2023-12-15 13:51:48,115 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-12-15 13:51:48,117 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\rajes\Learning\eclipse-workspace\IntroductionIndhu\src\test\resources
+2023-12-22 09:00:57,323 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
