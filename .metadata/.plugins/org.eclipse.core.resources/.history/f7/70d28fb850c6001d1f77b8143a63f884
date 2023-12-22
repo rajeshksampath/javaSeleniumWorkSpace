@@ -1,0 +1,52 @@
+package stepDefinitions;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
+
+import Utils.TestSetup;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+public class OfferPageStepDefinition {
+	
+	public String offerPageproductname;
+	TestSetup setup;
+public OfferPageStepDefinition(TestSetup setup) {
+		
+		this.setup = setup;
+	}	
+	@Then("User searched for {string} in offers page")
+	public void user_searched_for_same_short_name_in_offers_page(String shortName) throws InterruptedException {
+		
+		
+		setup.driver.findElement(By.cssSelector("a[href='#/offers']")).click();
+		Set<String> tabs= setup.driver.getWindowHandles();
+		Iterator<String> t1= tabs.iterator();
+		String parentwindow = t1.next();
+		String childwindow = t1.next();
+		setup.driver.switchTo().window(childwindow);
+		Thread.sleep(2000);
+		setup.driver.findElement(By.id("search-field")).sendKeys(shortName);
+		offerPageproductname = setup.driver.findElement(By.cssSelector("tr td:nth-child(1)")).getText();
+		Thread.sleep(2000);
+		
+	}
+	
+	@Then ("Validate product name in offers page matches with product name in landing page")
+	public void Validate_product_name_in_offers_page_matches_with_product_name_in_landing_page(){
+		
+		Assert.assertEquals(landingPageproductname, offerPageproductname);
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NameLocator.java&apos; to &apos;JavaBasics/src/basics&apos;&#x0D;&#x0A;- Original project: &apos;Introduction&apos;&#x0D;&#x0A;- Destination element: &apos;JavaBasics/src/basics&apos;&#x0D;&#x0A;- Original element: &apos;NameLocator.java&apos;" description="Copy compilation unit" destination="=JavaBasics/src&lt;basics" element1="/src&lt;{NameLocator.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1599848988212" units="1" version="1.0"/>
+</session>

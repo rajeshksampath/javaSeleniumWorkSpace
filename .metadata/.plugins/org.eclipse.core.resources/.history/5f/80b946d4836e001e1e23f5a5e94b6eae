@@ -1,0 +1,29 @@
+package CodingInterview;
+
+public class JsonPathFilterExample {
+    public static void main(String[] args) {
+        // JSON string
+    	String jsonResponse = "{\n" +
+    			"  \"name\": \"John Doe\",\n" +
+    			"  \"age\": 30,\n" +
+    			"  \"occupation\": \"Software Engineer\",\n" +
+    			"  \"hobbies\": [\n" +
+    			"    \"Hiking\",\n" +
+    			"    \"Fishing\",\n" +
+    			"    \"Reading\"\n" +
+    			"  ],\n" +
+    			"  \"avatar\": \"https://i.imgur.com/AF0XpuX.jpg\"\n" +
+    			"}";
+
+        // Parse the JSON string into a Java object
+        Object json = JsonPath.parse(jsonString);
+
+        // Get all people who are older than 25
+        List<Object> peopleOver25 = JsonPath.read(json, "$.[?(@.age > 25)]");
+
+        // Print the names of the people who are older than 25
+        for (Object person : peopleOver25) {
+            System.out.println(JsonPath.read(person, "$.name"));
+        }
+    }
+}

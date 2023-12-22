@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;testNGframeWork.testComponents&apos; to &apos;NewJavaBasics/main&apos;&#x0D;&#x0A;- Original project: &apos;NewJavaBasics&apos;&#x0D;&#x0A;- Destination element: &apos;NewJavaBasics/main&apos;&#x0D;&#x0A;- Original element: &apos;NewJavaBasics/test/testNGframeWork.testComponents&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="/main" element1="/test&lt;testNGframeWork.testComponents" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1673183102123" version="1.0"/>
+</session>

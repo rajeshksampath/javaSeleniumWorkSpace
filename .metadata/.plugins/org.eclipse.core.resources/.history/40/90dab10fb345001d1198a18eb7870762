@@ -1,0 +1,33 @@
+package stepDefinition;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class stepDefinition {
+
+	
+	@Given("^User is on netbanking landing page$")
+    public void user_is_on_netbanking_landing_page() throws Throwable {
+     System.out.println("User on landing page");
+    
+    }
+
+    @When("^User log in to application by providing {string} and {string}$")
+    public void user_log_in_to_application_by_providing_and(String string, String string2) {
+      System.out.println("Username and password accepted");
+    }
+
+    @Then("^User is able to login to home page and its populated correctly$")
+    public void user_is_able_to_login_to_home_page_and_its_populated_correctly() throws Throwable {
+     System.out.println("User logged in");   
+    }
+
+    @And("^Cards are displayed$")
+    public void cards_are_displayed() throws Throwable {
+        System.out.println("cards are dispalyed");
+    }
+	
+	
+}

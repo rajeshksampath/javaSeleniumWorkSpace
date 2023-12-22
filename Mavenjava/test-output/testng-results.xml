@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-16T08:14:51 EDT" name="Default suite" finished-at="2020-08-16T08:14:51 EDT" duration-ms="40">
+    <groups>
+    </groups>
+    <test started-at="2020-08-16T08:14:51 EDT" name="Default test" finished-at="2020-08-16T08:14:51 EDT" duration-ms="40">
+      <class name="Learning.Mavenjava.RestAPITest">
+        <test-method signature="PosJira()[pri:0, instance:Learning.Mavenjava.RestAPITest@769e7ee8]" started-at="2020-08-16T08:14:51 EDT" name="PosJira" finished-at="2020-08-16T08:14:51 EDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PosJira -->
+        <test-method signature="deleteTwitter()[pri:0, instance:Learning.Mavenjava.RestAPITest@769e7ee8]" started-at="2020-08-16T08:14:51 EDT" name="deleteTwitter" finished-at="2020-08-16T08:14:51 EDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTwitter -->
+      </class> <!-- Learning.Mavenjava.RestAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

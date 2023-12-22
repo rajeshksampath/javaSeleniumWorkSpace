@@ -1,0 +1,26 @@
+package CodingInterview;
+
+import java.util.ArrayList;
+
+public class SortingArray {
+//Sorting an array
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a = { 2, 4, 1, 9, 10, 3, 2, 1, 0 };
+		int b = 0;
+		ArrayList<Integer> c = new ArrayList<Integer>();
+		for (int k = 1; k < a.length; k++) {
+
+			for (int i = 0; i < a.length - 1; i++) {
+				if (a[i] >= b) {
+					b = a[i];
+					c.add(a[i]);
+
+				}
+			}
+		}
+		System.out.println(c);
+
+	}
+
+}
