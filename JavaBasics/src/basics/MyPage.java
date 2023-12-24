@@ -1,0 +1,26 @@
+package basics;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
+
+import sun.jvm.hotspot.debugger.Page;
+
+
+	
+		// TODO Auto-generated method stub
+		public class MyPage extends Page {
+			public static void main(String[] args) {
+		    @Override
+		    protected void openPage(PageLocator locator, Object... args) {
+		        // Get the URL of the page to open.
+		        String url = (String) args[0];
+
+		        // Open the page.
+		        driver.get(url);
+		    }
+		}
+
+}
